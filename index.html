@@ -10,11 +10,11 @@
     <!--Nav bar-->
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="pages/a_propos.html" >A propos</a></li>
-            <li><a href="pages/projets.html" >Projets</a></li>
-            <li><a href="pages/formations.html">Formations</a></li>
-            <li><a href="pages/contact.html" >Contact</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a_propos" >A propos</a></li>
+            <li><a href="#projets" >Projets</a></li>
+            <li><a href="#formation">Formations</a></li>
+            <li><a href="#contact" >Contact</a></li>
         </ul>
     </nav>
     <section id="accueil">
@@ -31,7 +31,140 @@
             </section>
         </section>
         </section>
-        
     </section>
+    <div id="a_propos">
+        <div class="propos">
+        <h2>À propos de Moi</h2>
+            <p>
+            Passionné par le design d'interface et le développement front-end, je mets un point d'honneur à transformer des concepts abstraits en expériences 
+            digitales tangibles et engageantes. Mon approche allie rigueur technique et sensibilité esthétique 
+            pour créer des interfaces qui ne sont pas seulement fonctionnelles, mais qui racontent également une histoire et suscitent l'émotion.
+            Chaque pixel, chaque interaction est pensé pour guider l'utilisateur dans un parcours intuitif et mémorable.
+            </p>
+        </div>
+    <div class="competances">
+        <h2>Competances aquis</h2>
+        <ul class="skills-list">
+            <li class="skill-item">
+                <span class="skill-name">HTML</span>
+                <div class="comp1">
+                    <div class="fill1"></div>
+                </div>
+            </li>
+            <li class="skill-item">
+                <span class="skill-name">CSS</span>
+                <div class="comp2">
+                    <div class="fill2"></div>
+                </div>
+            </li>
+            <li class="skill-item">
+                <span class="skill-name">Language C</span>
+                <div class="comp3">
+                    <div class="fill3"></div>
+                </div>
+            </li>
+        </ul>
+        </div>     
+    <div class="img_gride">
+            <img class="im1" src="../assets/im1.png" alt="C Language">
+            <img class="im2" src="../assets/im2.png" alt="CSS">
+            <img class="im3" src="../assets/im3.png" alt="HTML">
+            <img class="im4" src="../assets/im4.png" alt="JS">
+    </div>
+    <div id="projets">
+        <div class="projets">
+            <div class="proj1">
+                <h2>Projets</h2>
+                <button>Voir mon cv</button>
+            </div>
+            <div class="timeline"><!--MAzal khassni nzid dik lign dial Timeline-->
+            <div class="portfolio_container">
+                <div class="rec_left">
+                    <h2>Portfolio</h2>
+                    <br>
+                    <p>Création d'un portfolio interactif moderne présentant mes compétences en développement front-end et design UI/UX. Conception d'une expérience utilisateur fluide et responsive mettant en valeur mes projets et mon expertise technique.</p>
+                </div>
+                <div class="date_right">
+                    <h3>2025 - Present</h3>
+                </div>
+            </div>
+            <div class="campus_container">
+                <div class="date_left1">
+                    <h3>2025</h3>
+                </div>
+                <div class="rec_right1">
+                    <h2>Campus Connect</h2>
+                    <br>
+                    <p>CampusConnect veut créer un site web simple et pratique pour mieux présenter l’école et ses formations. Ce site aidera les visiteurs à découvrir l’école, ses valeurs et ses activités.</p>
+                </div>
+            </div>
+            <div class="sas_container">
+                <div class="rec_left3">
+                    <h2>Systeme de gestion d'achat client</h2>
+                    <br>
+                    <p>Développez une application console en langage C pour gérer un système d'achat client simplifié. L'application permet à un utilisateur de créer son profil, gérer un solde virtuel, consulter des produits et effectuer des achats en débitant automatiquement son solde.</p>
+                </div>
+                <div class="date_right3">2025</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="formation">
+        <h2>Formations & Certifications</h2>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <div class="contact_container">
+            <div class="contact_infos">
+                <div class="adresse">
+                    <p>📍
+                        Adresse
+                        123 Avenue de l'Innovation 75015 Paris, France
+                    </p>
+                </div>
+                <div class="telephone">
+                    <p>
+                        📞
+                        Téléphone
+                        +33 1 23 45 67 89 Lun-Ven : 9h-18h
+                    </p>
+                </div>
+                <div class="email">
+                    <p>
+                        ✉️
+                        Email
+                        contact@campusconnect.fr Réponse sous 24h
+                    </p>
+                </div>
+            </div>
+            <div class="formulaire">
+                <h3>Une idée, un projet, une collaboration ?</h3>
+                <div class="nom_complet">
+                    <label class="nom_lab" for="nom">Nom complet</label>
+                    <div class="nom_input">
+                       <input type="text" id="nom" name="nom" required placeholder="Lorem Ipsum"> 
+                    </div>
+                </div>
+                <div class="email_inp">
+                    <label class="email_lab" for="email">Email</label>
+                    <div class="email_input">
+                        <input type="email" id="email" name="email" required placeholder="lorem@ipsum.com">
+                    </div>
+                    
+                </div>
+                <div class="message">
+                    <label class="message_lab" for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                </div>
+                <div class="envoyer">
+                    Envoyer le message
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footR">
+        <p>© 2025 Prénom Nom. Tous droits réservés.</p>
+        <p>Fait avec ❤️ et Youdev</p>
+    </footer>
 </body>
 </html>
