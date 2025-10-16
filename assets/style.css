@@ -479,10 +479,6 @@ button:hover {
     display: flex;
     align-items: center;
 }
-.formulaire h3
-{
-    font-weight: bold;
-}
 .formulaire
 {
     background-color: rgba(255, 255, 255, 1);
@@ -490,11 +486,17 @@ button:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 40px;
     max-width: 300px;
+    max-height: 500px;
     width: 100%;
     margin-bottom: 50px;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+}
+.formulaire h3
+{
+    font-weight: bolder;
+    margin-bottom: 40px;
 }
 .nom_complet
 {
