@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AYOUB OUHARDA , c'est le portfolio de Ayoub Ouharda">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -13,7 +14,7 @@
             <li><a href="#accueil">Accueil</a></li>
             <li><a href="#a_propos" >A propos</a></li>
             <li><a href="#projets" >Projets</a></li>
-            <li><a href="#formation">Formations</a></li>
+            <li><a href="#formations">Formations</a></li>
             <li><a href="#contact" >Contact</a></li>
         </ul>
     </nav>
@@ -109,8 +110,36 @@
             </div>
         </div>
     </div>
-    <div id="formation">
-        <h2>Formations & Certifications</h2>
+    <div id="formations">
+        <div class="formations">
+            <div class="formations_text">
+                <h2>Formations & Certifications</h2>
+                <button>Voir mon GITHUB</button>
+            </div>
+            <div class="formations_container">
+                <div class="timeln_formations"></div>
+                <div class="form_cert">
+                    <div class="youcode">
+                        <h3>2025 - Present</h3>
+                        <h2>YOUCODE</h2>
+                        <p>Création d'un portfolio interactif moderne présentant mes compétences en développement front-end et design UI/UX. Conception d'une expérience utilisateur fluide et responsive mettant en valeur mes projets et mon expertise technique.</p>
+                    </div>
+                    <div class="fac">
+                        <h3>2024 - 2025</h3>
+                        <h2>Faculte Sultan Moulay Slimane</h2>
+                        <p>Création d'un portfolio interactif moderne présentant mes compétences en développement front-end et design UI/UX. Conception d'une expérience utilisateur fluide et responsive mettant en valeur mes projets et mon expertise technique.</p>
+                    </div>
+                    <div class="bac">
+                        <h3>2023 - 2024</h3>
+                        <h2>Lycee Ezzerktouni Beni Mellal</h2>
+                        <p>Création d'un portfolio interactif moderne présentant mes compétences en développement front-end et design UI/UX. Conception d'une expérience utilisateur fluide et responsive mettant en valeur mes projets et mon expertise technique.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
     </div>
     <div id="contact">
         <h2>Contact</h2>
@@ -140,21 +169,16 @@
             <div class="formulaire">
                 <h3>Une idée, un projet, une collaboration ?</h3>
                 <div class="nom_complet">
-                    <label class="nom_lab" for="nom">Nom complet</label>
-                    <div class="nom_input">
-                       <input type="text" id="nom" name="nom" required placeholder="Lorem Ipsum"> 
-                    </div>
+                    <label class="nom_lab" for="nom">Nom</label>
+                       <input class="nom_input" type="text"  name="nom" required placeholder="Lorem Ipsum"> 
                 </div>
-                <div class="email_inp">
+                <div class="email_complet">
                     <label class="email_lab" for="email">Email</label>
-                    <div class="email_input">
-                        <input type="email" id="email" name="email" required placeholder="lorem@ipsum.com">
-                    </div>
-                    
+                        <input class="email_input" type="email" name="email" required placeholder="lorem@ipsum.com">
                 </div>
-                <div class="message">
+                <div class="message_complet">
                     <label class="message_lab" for="message">Message</label>
-                    <textarea id="message" name="message" required placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                    <textarea class="message_input" name="message" required placeholder="Lorem ipsum dolor sit amet..."></textarea>
                 </div>
                 <div class="envoyer">
                     Envoyer le message

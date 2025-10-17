@@ -12,10 +12,20 @@ body
     background-position: center;
     font-family: 'Courier New', Courier, monospace;
 }
+@media (max-width: 768px) {
+*{
+    max-width: 100%;
+}
+body 
+{
+    overflow-x: hidden;
+}
+}
 nav
 {
     background-color: rgb(58, 58, 199);
     box-shadow: blue;
+    overflow: hidden;
 }
 nav ul
 {
@@ -24,6 +34,7 @@ nav ul
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 nav li{
     height: 50px;
@@ -42,18 +53,21 @@ nav a:hover
 {
     background-color: #04BF9D;
 }
-@media (max-width: 768px) 
+@media (max-width: 768px) {
+nav ul
 {
-    nav ul 
-    {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    nav a 
-    {
-        text-align: center;
-        border-bottom: 1px solid #555;
-    }
+flex-direction: column;
+gap: 0.5rem;
+}
+nav a {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding: 15px 20px;
+    justify-content: center;
+}
+nav li {
+    width: 100%;
+}
 }
 #accueil 
 {
@@ -79,6 +93,7 @@ nav a:hover
     object-fit: cover;
     border: 5px solid #3498db;
     margin-bottom: 25px;
+    object-fit: cover;
 }
 h1
 {
@@ -111,27 +126,42 @@ button {
 }
 
 .email_button {
-    background-color: #3498db;
-    color: white;
+    background-color: #08141d;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: none; 
 }
-
 .linkdin_button {
-    background-color: #0077b5;
-    color: white;
+    background-color: #006699;
+    color: #ffffff;
+    font-weight: 600;
 }
-
 .github_button {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #ffffff;
+    font-weight: 600;
 }
-
 .cv_github {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #c0392b;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 button:hover {
     color: purple;
+}
+@media (max-width: 768px) {
+.buttons
+{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+}
 }
 #a_propos
 {
@@ -243,6 +273,30 @@ button:hover {
     background-color: rosybrown;
     border-radius: 20px;
 }
+@media (max-width: 768px) {
+.skill-item
+{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.comp1,.comp2,.comp3 
+{
+    width: 100%;
+    max-width: 210px;
+}
+}
+@media (max-width: 768px) {
+.img_gride {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.im1, .im2, .im3, .im4 {
+    width: 80px;
+    height: 80px;
+}
+}
 /*Mazal khassni n9ad had tsawer*/
 .img_gride{
     display: flex;
@@ -256,6 +310,7 @@ button:hover {
 {
     width: 100px;
     height: 100px;
+    object-fit: contain;
 }
 #projets
 {
@@ -292,8 +347,13 @@ button:hover {
 }
 .proj1 button
 {
-    color: white;
-    background-color: coral;
+    color: whitesmoke;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(68, 41, 31);
+}
+.timeline
+{
+    
 }
 .portfolio_container
 {
@@ -315,20 +375,22 @@ button:hover {
 }
 .rec_left h2
 {
-    color: rgba(0, 0, 0, 1);
+    color: #2c3e50;
     display: flex;
     align-items: center;
+    font-weight: 700;
 }
 .date_right 
 {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(8, 157, 243, 1);
+    background-color: #0669a1;
     border-radius: 12px;
     width:300px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 }
 .campus_container
 {
@@ -339,13 +401,14 @@ button:hover {
 .date_left1
 {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(8, 157, 243, 1);
+    background-color: #0669a1;
     border-radius: 12px;
     width:300px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 }
 .rec_right1
 {
@@ -362,9 +425,10 @@ button:hover {
 }
 .rec_right1 h2
 {
-    color: rgba(0, 0, 0, 1);
+    color: #2c3e50;
     display: flex;
     align-items: center;
+    font-weight: 700;
 }
 .sas_container
 {
@@ -386,22 +450,216 @@ button:hover {
 }
 .rec_left3 h2
 {
-    color: rgba(0, 0, 0, 1);
+    color: #2c3e50;
     display: flex;
     align-items: center;
+    font-weight: 700;
 }
 .date_right3
 {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(8, 157, 243, 1);
+    background-color: #0669a1;
     border-radius: 12px;
     width:300px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
 }
 /* ==========> Hna mazal gha nerje3 l page dial Formations & Certifications" */
+#formations
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 100px 10px;
+}
+.formations
+{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formations_text
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.formations_text h2
+{
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+.formations_text button
+{
+    background-color: #222;
+    color: #ffffff;
+    font-weight: 600;
+}
+.formations_container
+{
+    display: flex;
+    flex-direction: row;
+    flex: 100;
+    gap: 20px;
+}
+.timeln_formations
+{
+    display: flex;
+    flex: 1;
+    width: 5px;
+    height: 850px;
+    background-color: black;
+    position: absolute;
+    margin-left: 10px;
+}
+.form_cert
+{
+    display: flex;
+    flex: 99;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.youcode
+{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.youcode h2
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: Suez system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.youcode h3
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.youcode p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fac 
+{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-right: 25px;
+    overflow: hidden;
+}
+.fac h2
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: Suez system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.fac h3
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.fac p 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bac
+{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.bac h2
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: Suez system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.bac h3
+{
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.bac p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) 
+{
+.portfolio_container,.campus_container,.sas_container,.formations_container 
+{
+    flex-direction: column;
+}
+.rec_left, .rec_right1, .rec_left3,.date_right, .date_left1, .date_right3 {
+    width: 100%;
+    margin: 10px 0;
+}
+.timeln_formations {
+    display: none;
+}
+.form_cert {
+    margin-left: 0;
+}
+}
+
+/*att Kmel be3da l formations*/
 #contact
 {
     
@@ -435,6 +693,7 @@ button:hover {
     margin-bottom: 50px;
     margin-top: 25px;
     margin-right: 25px;
+    overflow: hidden;
 }
 .adresse p
 {
@@ -453,7 +712,7 @@ button:hover {
     margin-bottom: 50px;
     margin-top: 25px;
     margin-left: 25px;
-    
+    overflow: hidden;
 }
 .telephone p
 {
@@ -472,6 +731,7 @@ button:hover {
     margin-bottom: 50px;
     margin-top: 25px;
     margin-right: 25px;
+    overflow: hidden;
 }
 .email p
 {
@@ -508,23 +768,44 @@ button:hover {
 {
     font-weight: bold;
     margin-right: 25px;
+    margin-top: 10px;
 }
 .nom_input
 {
-
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width:300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 1rem;
 }
-.email_inp
+.email_complet
 {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
 }
+.email_input
+{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width:300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22px;
+    padding-left: 1rem;
+}
 .email_lab
 {
     font-weight: bold;
     margin-right: 25px;
+    margin-top: 5px;
 }
-.message
+.message_complet
 {
     display: flex;
     flex-direction: row;
@@ -534,11 +815,24 @@ button:hover {
 {
     font-weight: bold;
     margin-right: 25px;
+    margin-top: 5px;
+}
+.message_input
+{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width:600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22px;
+    padding-left: 1rem;
 }
 .envoyer
 {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(8, 157, 243, 1);
+    background-color: #0669a1;
     border-radius: 12px;
     width:300px;
     height: 45px;
@@ -547,6 +841,48 @@ button:hover {
     justify-content: center;
     font-weight: bolder;
     margin-top: 30px;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+.contact_container {
+    flex-direction: column;
+}
+.adresse, .telephone, .email, .formulaire {
+    width: 100%;
+    margin: 10px 0;
+}
+.nom_complet, .email_complet, .message_complet 
+{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nom_input, .email_input, .message_input {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+}
+.message_input {
+    width: 100%;
+}
+.envoyer {
+    width: 100%;
+}
+}
+/*general typography*/
+@media (max-width: 768px) {
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.presentation, .propos, .competances, .projets, .formations {
+    padding: 20px;
+    margin: 10px;
+}
+
+body {
+    font-size: 14px; /* Slightly smaller text on mobile */
+}
 }
 footer {
     background: var(--dark);
